@@ -159,7 +159,8 @@ int main()
       printf("Digite a coordenada do tiro: ");
       scanf("%c %d",&linhat,&colunat);
       fflush(stdin);
-      system("cls"); // limpando a tela a cada coordenada escolhida
+      system("clear"); // limpando a tela a cada coordenada escolhida no Linux
+      //system("cls"); // limpando a tela a cada coordenada escolhida no Windows
       if (acertoerro(mapa,linhat,colunat)== 1) // chamando a funcao para verificar se acertou um navio ou nao
       {
            printf("\nACERTOU um navio inimigo!\n");
